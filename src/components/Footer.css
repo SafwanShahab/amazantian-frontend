@@ -1,0 +1,47 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+.main-content {
+  flex: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; 
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  height: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  font-family: 'Open Sans', sans-serif;
+  position: sticky; 
+  width: 100%;
+  z-index: 0;
+}
+
+footer p {
+  margin: 0 15px;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.linkedin-icon {
+  width: 22px; 
+  height: auto;
+  margin-left: 4px; 
+  transition: opacity 0.3s ease; 
+}
+
+.linkedin-icon:hover {
+  opacity: 0.7; 
+}

@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0; 
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1; 
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.5; 
+  }
+  50% {
+    opacity: 1; 
+  }
+  100% {
+    opacity: 0.5; 
+  }
+}
+
+
+
+
+.centered-text {
+  animation: fadeIn 1s ease-in; 
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  overflow: hidden; 
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.homepage .background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(5px); 
+  z-index: -1; 
+}
+
+.homepage .centered-text {
+  z-index: 1;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.homepage .centered-text h1 {
+  padding-top: 1000px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  margin: 10px auto 0; 
+  width: 80%;
+  padding-top: 10px; 
+}
+
+
+.blank-page {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .homepage .centered-text h1 {
+    font-size: 20px; 
   }
 }

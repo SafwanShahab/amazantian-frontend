@@ -3,12 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-oauth/google": "^0.12.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.5.0",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "axios": "^1.7.7",
+    "express": "^4.21.1",
+    "postcss": "^8.4.47",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
     "react-scripts": "5.0.1",
+    "react-tsparticles": "^2.12.2",
+    "resolve-url-loader": "^5.0.0",
+    "rimraf": "^6.0.1",
+    "svgo": "^3.3.2",
+    "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +48,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-class-properties": "^7.25.4",
+    "@babel/plugin-transform-nullish-coalescing-operator": "^7.24.7",
+    "@babel/plugin-transform-numeric-separator": "^7.24.7",
+    "@babel/plugin-transform-optional-chaining": "^7.24.8",
+    "@babel/plugin-transform-private-methods": "^7.25.4"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
