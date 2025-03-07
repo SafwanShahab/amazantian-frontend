@@ -27,7 +27,7 @@ const App: React.FC = () => {
               <div className="homepage">
                 {/* Background video */}
                 <video autoPlay muted loop className="background-video">
-                  <source src="cityview.mp4" type="video/mp4" />
+                  <source src="Cityview.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
 
