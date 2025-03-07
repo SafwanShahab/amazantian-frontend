@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "./Misc.js";
 import "./Navbar.css"; 
 
 const Navbar = () => {
@@ -44,7 +45,7 @@ const Navbar = () => {
       
       {/* Company Verbiage */}
       <div className="verbiage-container">
-        <img src="Amazantian (Verbiage).png" alt="Company Verbiage" className="verbiage" />
+        <img src="Verbiage.png" alt="Company Verbiage" className="verbiage" />
       </div>
 
       <div className="header-right">
@@ -60,6 +61,9 @@ const Navbar = () => {
           <Link to="/find-jobs">
             <button className="find-jobs-btn">Find Jobs</button>
           </Link>
+          <Link to ="/miscellaneous">
+          <button className = "misc-btn">Contact/FAQ's</button>
+          </Link>
         </div>
       </nav>
 
@@ -73,7 +77,7 @@ const Navbar = () => {
             <Link to="/find-talent" onClick={handleMenuItemClick}>Find Talent</Link>
           </li>
           <li>
-            <Link to="/contact" onClick={handleMenuItemClick}></Link>
+            <Link to="/miscellaneous" onClick={handleMenuItemClick}>Contact/FAQ's</Link>
           </li>
         </ul>
       </div>

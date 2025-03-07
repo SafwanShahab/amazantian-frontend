@@ -80,7 +80,19 @@ const ParticlesComponent = memo(({ id, backgroundColor = 'rgb(0, 25, 60)', parti
     [backgroundColor, particleColor]
   );
 
-  return <Particles id={id} options={options} />;
+  return (
+    <div
+      style={{
+        position: "fixed", // Makes it cover the entire screen
+        top: 0,
+        left: 0,
+        width: "100vw",
+        height: "100vh",
+      }}
+    >
+      <Particles id={id} options={options} />
+    </div>
+  );
 });
 
 export default ParticlesComponent;

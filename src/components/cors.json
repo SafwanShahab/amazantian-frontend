@@ -1,0 +1,18 @@
+[
+  {
+    "origin": [
+      "http://localhost:3000",
+      "hhtp://amazantian.com"
+    ],
+    "responseHeader": [
+      "Content-Type"
+    ],
+    "method": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "maxAgeSeconds": 3600
+  }
+]
