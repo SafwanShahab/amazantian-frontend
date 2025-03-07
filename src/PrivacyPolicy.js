@@ -68,10 +68,10 @@ function PrivacyPolicy() {
 [(9728 Variel Ave, Chatsworth, CA 91311)]
 (amazantian@gmail.com)</h2>
 <p>
-Effective Date: [Insert Date]
+Effective Date: [2/28/25]
 </p>
 <p>
-Last Updated: [Insert Date]
+Last Updated: [3/7/2025]
 </p>
         </section>
         {/* Add more sections as needed */}

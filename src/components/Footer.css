@@ -12,9 +12,17 @@ html, body {
 
 .main-content {
   flex: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Footer should stick to the bottom of the screen */
 footer {
+  position: fixed; /* Fixes the footer at the bottom */
+  bottom: 0; /* Sticks the footer to the bottom */
+  left: 0; /* Sticks it to the left side */
+  width: 100%; /* Makes it span the whole width */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,10 +32,10 @@ footer {
   height: 80px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
   font-family: 'Open Sans', sans-serif;
-  position: sticky; 
-  width: 100%;
-  z-index: 0;
+  z-index: 1000; /* Make sure it's above other content */
+  font-family: 'Inter', sans-serif;
 }
+
 
 footer p {
   margin: 0 15px;
@@ -44,4 +52,14 @@ footer p {
 
 .linkedin-icon:hover {
   opacity: 0.7; 
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: auto;
+  }
+
+  
 }
