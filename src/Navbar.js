@@ -61,7 +61,7 @@ const Navbar = () => {
           <Link to="/find-jobs">
             <button className="find-jobs-btn">Find Jobs</button>
           </Link>
-          <Link to ="/miscellaneous">
+          <Link to ="/contact-faqs">
           <button className = "misc-btn">Contact/FAQ's</button>
           </Link>
         </div>
@@ -77,7 +77,7 @@ const Navbar = () => {
             <Link to="/find-talent" onClick={handleMenuItemClick}>Find Talent</Link>
           </li>
           <li>
-            <Link to="/miscellaneous" onClick={handleMenuItemClick}>Contact/FAQ's</Link>
+            <Link to="/contact-faqs" onClick={handleMenuItemClick}>Contact/FAQ's</Link>
           </li>
         </ul>
       </div>
