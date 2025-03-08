@@ -66,7 +66,7 @@ const App: React.FC = () => {
           <Route path="/submit-jobs" element={<JobForm />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<ToS />} />
-          <Route path="/miscellaneous" element={<Misc />} />
+          <Route path="/contact-faqs" element={<Misc />} />
         </Routes>
         
         <Footer />
