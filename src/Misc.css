@@ -9,7 +9,6 @@
   padding: 2rem;
   gap: 2rem; /* Adds space between the sections */
   margin-top: -0.90rem;
-  overflow-y: scroll;
   z-index: 15;
   height: 120vh;
 }
@@ -68,7 +67,6 @@
   margin-top: 10em;
   z-index: 100;
 
-
 }
 
 .faq-header {
@@ -110,28 +108,20 @@
   line-height: 1.5;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff; 
-  color: rgb(0, 0, 0);
-  padding: 10px;
-  height: 80px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
-  font-family: 'Open Sans', sans-serif;
-  width: 100%;
-  z-index: 19;
-  font-family: 'Inter', sans-serif;
-  position: relative;
-}
+
 
 /* Mobile Layout */
 @media (max-width: 768px) {
+  
+
+  .spacer {
+    height: 10vh;
+  }
   .misc-container {
     flex-direction: column; /* Stack sections vertically on smaller screens */
     padding: 1rem;
-
+    min-height: 100vh;
+  
   }
 
   .contact-section {
@@ -142,16 +132,7 @@ footer {
   .faq-section {
     margin-top: 0rem;
     max-width: 100%; /* Make both sections full width */
-    margin-bottom: 10rem; /* Adds space at the bottom of the FAQ section */
-
   }
 
-  /* To make sure the Contact section comes before the FAQ section */
-  .contact-section {
-    order: 1;
-  }
 
-  .faq-section {
-    order: 2;
-  }
 }

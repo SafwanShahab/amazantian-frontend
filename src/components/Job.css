@@ -138,21 +138,3 @@ h2 {
     padding: 12px 20px;
   }
 }
-
-@media (max-width: 576px) {
-  .image-quote {
-    font-size: 0.9rem;
-  }
-
-  .img-fluid {
-    margin-top: 50px;
-  }
-
-  .form-container {
-    padding: 15px;
-  }
-
-  .form-control {
-    font-size: 0.9rem;
-  }
-}

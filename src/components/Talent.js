@@ -3,6 +3,7 @@ import "./Talent.css";
 import ParticleBackground from "./ParticlesBackground.js";
 import { db } from "../firebase/firebase.js"; 
 import { collection, addDoc } from "firebase/firestore";  // Add this import for Firestore functions
+import ScrollToTop from "./ScrollToTop.js";
 
 const Talent = () => {
   const [form, setForm] = useState({
@@ -54,6 +55,7 @@ const Talent = () => {
 
   return (
     <div className="talent-page container-fluid">
+      <ScrollToTop />
       <ParticleBackground />
       <div className="row">
         <div className="col-md-6 text-center">
