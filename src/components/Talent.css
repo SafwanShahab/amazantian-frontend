@@ -117,17 +117,23 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .talent-page {
+    padding-bottom: 40vh;
+  }
   .image-quote {
     font-size: 1rem;
   }
 
   .img-fluid {
-    margin-top: 80px;
+    margin-top: 100px;
   }
 
-  form {
-    max-width: 95%;
-    margin-top: -150px;
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .form-control {
+    padding: 10px;
   }
 
   h2 {
@@ -136,31 +142,6 @@ h2 {
 
   .btn {
     padding: 12px 20px;
-  }
-  .talent-page {
-    padding-bottom: 25vh;
-
-  }
-}
-
-@media (max-width: 576px) {
-  .talent-page {
-    padding-bottom: 25vh;
-  }
-  .image-quote {
-    font-size: 0.9rem;
-  }
-
-  .img-fluid {
-    margin-top: 50px;
-  }
-
-  .form-container {
-    padding: 15px;
-  }
-
-  .form-control {
-    font-size: 0.9rem;
   }
 }
 

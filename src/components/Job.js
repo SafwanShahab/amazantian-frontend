@@ -90,15 +90,7 @@ const Job: React.FC = () => {
       <div className="row">
         <div className="col-md-6 text-center">
           <img src="/FINDJOB.jpg" alt="Find Jobs" className="img-fluid" />
-          <p className="image-quote mt-3">"Your skills deserve the opportunity to thrive and grow in a dynamic, innovative environment."
-
-
-
-
-
-
-
-"</p>
+          <p className="image-quote mt-3">"Your skills deserve the opportunity to thrive and grow in a dynamic, innovative environment."</p>
         </div>
 
         <div className="col-md-6">

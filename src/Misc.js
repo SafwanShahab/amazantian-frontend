@@ -65,9 +65,10 @@ function Misc() {
               
             </div>
           ))}
+          <div className="spacer"></div>
+
         </div>
       </div>
-      
     </div>
   );
 }

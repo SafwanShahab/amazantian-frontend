@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar'; 
 import Talent from './components/Talent';
 import Job from './components/Job';
-import TalentForm from './components/TalentForm'; 
-import JobForm from './components/JobForm';
 import Footer from './components/Footer'; 
 import PrivacyPolicy from './PrivacyPolicy';
 import ToS from './ToS';
@@ -62,8 +60,6 @@ const App: React.FC = () => {
           
           <Route path="/find-talent" element={<Talent />} />
           <Route path="/find-jobs" element={<Job />} />
-          <Route path="/submit-talent" element={<TalentForm />} />
-          <Route path="/submit-jobs" element={<JobForm />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<ToS />} />
           <Route path="/contact-faqs" element={<Misc />} />
